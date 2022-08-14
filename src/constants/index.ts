@@ -15,7 +15,12 @@ import {
   star,
 } from "../assets";
 
-export const navLinks = [
+export interface NavLinks {
+  id: string;
+  title: string;
+}
+
+export const navLinks: NavLinks[] = [
   {
     id: "home",
     title: "Home",

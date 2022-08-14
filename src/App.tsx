@@ -1,17 +1,30 @@
 import { Footer, Header, Nav } from "./components/Common";
-import { Billing, Business, CardDeal, Clients, CTA, Testimonials } from "./components/Home";
-import { helpers } from "./styles";
+import {
+  Billing,
+  Business,
+  CardDeal,
+  Clients,
+  CTA,
+  Stats,
+  Testimonials,
+} from "./components/Home";
+
+import { helpers } from "./utils/styles";
 
 function App() {
   return (
     <div className={`${helpers.background} overflow-hidden w-full`}>
       <div className={`${helpers.paddingX} ${helpers.flexCenter}`}>
-        <Nav />
+        <div className={`${helpers.boxWidth}`}>
+          <Nav />
+        </div>
       </div>
       <Header />
-      <main className={`${helpers.background} ${helpers.paddingX} ${helpers.flexStart}`}>
+      <main
+        className={`${helpers.background} ${helpers.paddingX} ${helpers.flexStart}`}
+      >
         <div className={`${helpers.boxWidth}`}>
-          <section>stats</section>
+          <Stats />
           <Business />
           <Billing />
           <CardDeal />
