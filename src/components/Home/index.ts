@@ -1,0 +1,8 @@
+export { default as Billing } from './Billing'
+export { default as Business } from './Business'
+export { default as CardDeal } from './CardDeal'
+export { default as Clients } from './Clients'
+export { default as CTA } from './CTA'
+export { default as FeedBackCard } from './FeedBackCard'
+export { default as GetStarted } from './GetStarted'
+export { default as Testimonials } from './Testimonials'
