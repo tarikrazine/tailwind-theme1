@@ -19,7 +19,11 @@ function App() {
           <Nav />
         </div>
       </div>
-      <Header />
+      <header className={`${helpers.background} ${helpers.flexStart}`}>
+        <div className={`${helpers.boxWidth}`}>
+          <Header />
+        </div>
+      </header>
       <main
         className={`${helpers.background} ${helpers.paddingX} ${helpers.flexStart}`}
       >
