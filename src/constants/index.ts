@@ -63,7 +63,15 @@ export const features = [
   },
 ];
 
-export const feedback = [
+export interface FeedBack {
+  id: string;
+  content: string;
+  name: string;
+  title: string;
+  img: string;
+}
+
+export const feedback: FeedBack[] = [
   {
     id: "feedback-1",
     content:
